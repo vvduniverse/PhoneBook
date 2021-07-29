@@ -16,6 +16,7 @@
 		A082443226B27D290034B5DB /* PeoplesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082443126B27D290034B5DB /* PeoplesTableViewController.swift */; };
 		A082443426B27D5D0034B5DB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082443326B27D5D0034B5DB /* Data.swift */; };
 		A082443626B27DA40034B5DB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082443526B27DA40034B5DB /* DataManager.swift */; };
+		A082443826B28FD40034B5DB /* DetailedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082443726B28FD40034B5DB /* DetailedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A082443126B27D290034B5DB /* PeoplesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesTableViewController.swift; sourceTree = "<group>"; };
 		A082443326B27D5D0034B5DB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		A082443526B27DA40034B5DB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A082443726B28FD40034B5DB /* DetailedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				A082443326B27D5D0034B5DB /* Data.swift */,
 				A082443526B27DA40034B5DB /* DataManager.swift */,
 				A082443126B27D290034B5DB /* PeoplesTableViewController.swift */,
+				A082443726B28FD40034B5DB /* DetailedTableViewController.swift */,
 				A082442626B27CCB0034B5DB /* Assets.xcassets */,
 				A082442826B27CCB0034B5DB /* LaunchScreen.storyboard */,
 				A082442B26B27CCB0034B5DB /* Info.plist */,
@@ -152,6 +155,7 @@
 				A082442226B27CCA0034B5DB /* ViewController.swift in Sources */,
 				A082441E26B27CCA0034B5DB /* AppDelegate.swift in Sources */,
 				A082442026B27CCA0034B5DB /* SceneDelegate.swift in Sources */,
+				A082443826B28FD40034B5DB /* DetailedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

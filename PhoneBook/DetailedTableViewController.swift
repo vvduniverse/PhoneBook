@@ -1,5 +1,5 @@
 //
-//  PeoplesTableViewController.swift
+//  DetailedTableViewController.swift
 //  PhoneBook
 //
 //  Created by Vahtee Boo on 29.07.2021.
@@ -7,32 +7,28 @@
 
 import UIKit
 
-class PeoplesTableViewController: UITableViewController {
-    
-    var phoneBook: [Persons] = []
+class DetailedTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addPersons()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        phoneBook.count
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let person = phoneBook[indexPath.row]
-        let text = person.fullname
-        
-        var content = cell.defaultContentConfiguration()
-        content.text = text
-        cell.contentConfiguration = content
-        
-        return cell
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
 
     /*
@@ -89,19 +85,5 @@ class PeoplesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    private func addPersons() {
-        
-        let randomNames = DataManager.shared.names.shuffled()
-        let randomSurnames = DataManager.shared.surnames.shuffled()
-        let randomPhones = DataManager.shared.phones.shuffled()
-        let randomEmails = DataManager.shared.emails.shuffled()
-        
-        for index in 0...DataManager.shared.names.count - 1 {
-            let person = Persons(name: randomNames[index], surname: randomSurnames[index], phone: randomPhones[index], email: randomEmails[index])
-            phoneBook.append(person)
-        }
-//        print(phoneBook[5].fullname)
-    }
-    
+
 }
